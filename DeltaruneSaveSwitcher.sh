@@ -3,10 +3,10 @@
 echo "DISABLE STEAM CLOUD FOR BEST EXPERIENCE"
 
 ### Variables
-DESKTOPFILE=~/.local/share/applications/DELTARUNE.desktop
-PREFIX_LOCATION=~/.local/share/Steam/steamapps/compatdata/1671210/pfx
-SAVE_LOCATION=~/.local/share/DELTARUNESAVESWITCHER
-APPDATAFOLDER=$PREFIX_LOCATION/drive_c/users/steamuser/AppData/Local
+DESKTOPFILE=${DESKTOPFILE:=~/.local/share/applications/DELTARUNE.desktop}
+PREFIX_LOCATION=${PREFIX_LOCATION:=~/.local/share/Steam/steamapps/compatdata/1671210/pfx}
+SAVE_LOCATION=${SAVE_LOCATION:=~/.local/share/DELTARUNESAVESWITCHER}
+APPDATAFOLDER=${APPDATAFOLDER:=$PREFIX_LOCATION/drive_c/users/steamuser/AppData/Local}
 ###
 
 mkdir -p $SAVE_LOCATION
