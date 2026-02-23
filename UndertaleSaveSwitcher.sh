@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo DISABLE STEAM CLOUD
+echo "DISABLE STEAM CLOUD FOR BEST EXPERIENCE"
 
 ### Variables
 DESKTOPFILE=~/.local/share/applications/Undertale.desktop
@@ -22,6 +22,7 @@ read SAVENAME
 
 rm $APPDATAFOLDER
 mkdir -p $SAVE_LOCATION/$SAVENAME
+touch $SAVE_LOCATION/$SAVENAME/NOTEMPTY
 ln -s $SAVE_LOCATION/$SAVENAME $APPDATAFOLDER
 
 dex $DESKTOPFILE
