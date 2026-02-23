@@ -1,4 +1,4 @@
-Linux Only
+Linux Only so far. As I forgot how to use windows.
 
 Edit config by editing the Script.
 
